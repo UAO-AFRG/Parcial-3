@@ -35,3 +35,35 @@ Para iniciar los contenedores en segundo plano (detached mode):
 docker compose up -d
 ```
 
+4. **Verificar que los contenedores estén corriendo**
+
+```bash
+docker ps
+```
+
+Deberías ver los contenedores activos listados.
+
+5. **Ver logs de un contenedor (opcional)**
+
+Para revisar la salida de un contenedor específico (por ejemplo, llamado `web`):
+
+```bash
+docker logs -f web
+```
+
+6. **Detener los contenedores**
+
+Cuando quieras parar el entorno:
+
+```bash
+docker-compose down
+```
+
+
+---
+
+## Notas adicionales
+
+- Si haces cambios en el Dockerfile o en la configuración, recuerda reconstruir las imágenes con `docker compose build`.
+- Los puertos expuestos y volúmenes están configurados en el archivo `docker-compose.yml`.
+- Para más información sobre Docker y Docker Compose, visita la [documentación oficial](https://docs.docker.com/).
