@@ -24,7 +24,7 @@ git clone https://github.com/UAO-AFRG/Parcial-3.git
 Ejecuta el siguiente comando para construir las imágenes definidas en el `Dockerfile` y `docker-compose.yml`:
 
 ```bash
-docker-compose build
+docker compose build
 ```
 
 3. **Levantar los contenedores**
@@ -56,7 +56,7 @@ docker logs -f web
 Cuando quieras parar el entorno:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 
